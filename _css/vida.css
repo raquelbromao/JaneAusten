@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteTitulo';
+    src: url("../_fonts/BetterHeather.ttf");
+}
+    
+/*
+    ORDEM DE DECLARAÇÕES
+    
+    1. Posicionamento
+    2. Modelo da caixa
+    3. Tipografia
+    4. Visual
+    
+*/    
+
+figcaption {
+    display: none;
+}
+
+

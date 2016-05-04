@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteTitulo';
+    src: url("../_fonts/BetterHeather.ttf");
+}
+    
+/*
+    ORDEM DE DECLARAÇÕES
+    
+    1. Posicionamento
+    2. Modelo da caixa
+    3. Tipografia
+    4. Visual
+    
+*/    
+    
+body {
+    font-family: Verdana, sans-serif; 
+    background-color: #FDF5E6;    
+    background-image: url("../_imagens/background.jpg");
+}    
+
+div#interface {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    margin-bottom: 0;
+    padding: 10px;    
+    
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+div#interface p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+header#cabecalho {    
+    border-bottom: 1px solid #606060;
+}
+
+/*DEIXA A IMAGEM DO CABEÇALHO CENTRALIZADA*/
+header#cabecalho img#img-cabecalho {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav#menu ul {
+    position: static;
+    margin: 0 auto;
+    text-transform: uppercase; 
+    list-style: none;
+    background-color: bisque;
+}
+
+nav#menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+
+	-webkit-transition: background-color 1s;
+	-moz-transition: background-color 1s;
+	-ms-transition: background-color 1s;
+	-o-transition: background-color 1s;
+	transition: background-color 1s;    
+}
+
+nav#menu li:hover {
+    background-color: darksalmon;
+}
+
+nav#menu a {
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #000;
+}
+
+nav#menu a:hover {
+    color: #fff;
+}
+
+header#cabecalho h1 {
+    padding: 0;
+    margin-bottom: 0;
+    font-family: 'FonteTitulo', cursive;
+    font-size: 30pt;
+    text-shadow: 0px 2px 3px #666;
+    color: #B22222;    
+}
+
+header#cabecalho h2 {
+    padding: 0;
+    margin-top: 0;
+    font-family: Verdana, sans-serif;
+    font-size: 15pt;
+    color: #FA8072;
+}
+
+section#corpo {
+    width: 700px;
+    float: left;    
+    display: block;
+}
+
+form {
+    margin: auto;
+    display: block;
+}
+
+input, textarea { 
+    padding: 9px; 
+    border: solid 1px #E5E5E5; 
+    outline: 0; 
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width: 200px; 
+    background: #FFFFFF; 
+    } 
+   
+textarea { 
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+    } 
+   
+input:hover, textarea:hover, 
+input:focus, textarea:focus { 
+    border-color: #C9C9C9; 
+    } 
+   
+form.form label { 
+    margin-left: 10px; 
+    color: #999999; 
+    } 
+   
+p.submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #B22222; 
+    border: 0; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    }
+
+footer#rodape{
+    clear: both; /*limpa as configurações dos lados*/
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+    font-size: 12px;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="_css/index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Austen - Vida e Obra</title>
+</head>
+
+<script>
+    function muda_icone(tipo) {
+        if (tipo==1) {
+        document.getElementById("js1").src="_imagens/icone-03.jpg";
+        }
+        if (tipo==2) {
+        document.getElementById("js2").src="_imagens/icone-01.jpg";
+        }          
+    }      
+    
+    function volta_icone(tipo) {
+        if (tipo==1) {
+        document.getElementById("js1").src="_imagens/icone-01.jpg";
+        }
+        if (tipo==2) {
+        document.getElementById("js2").src="_imagens/icone-02.jpg";
+        }        
+    }    
+</script> 
+    
+<body>
+    
+    <div id="interface">
+        
+        <header id="cabecalho">
+        
+            <img id="img-cabecalho" src="_imagens/imagem-header.jpg"/>
+            
+            <nav id="menu">
+                <ul>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='vida.html'>Vida</a></li>
+                    <li><a href='obras.html'>Obras</a></li>
+                    <li><a href='midia.html'>Midia</a></li>
+                    <li><a href='contato.html'>Contato</a></li>
+                </ul>
+            </nav>
+            
+            <hgroup>
+                <h1>Jane Austen</h1>
+                <h2>Vida e Obra</h2>
+            </hgroup>
+        
+        </header>
+        
+        <section id="corpo">
+            <h1>Introdução</h1>        
+    <p>Jane Austen figura como uma das maiores escritoras da literatura mundial, conhecida pela sua escrita irônica e sagaz. A ironia que utiliza para descrever as personagens de seus romances a coloca entre os clássicos, haja vista sua aceitação, inclusive na atualidade, sendo constantemente objeto de estudo acadêmico, e alcançando um público bastante amplo. Austen não foi considerada uma grande romancista, até o início do século XIX. Apesar de suas obras aparecerem sob pseudônimo, foram amplamente conhecidas e receberam numerosas críticas.</p>
+        <h1>Obras</h1>
+   <table id="obras-romances"> 
+       <tr> <td class="ce">1811</td> <td>Razão e Sensibilidade</td> </tr>
+       <tr> <td class="ce">1813</td> <td>Orgulho e Preconceito</td> </tr>
+       <tr> <td class="ce">1814</td> <td>Mansfield Park</td> </tr>
+       <tr> <td class="ce">1815</td> <td>Emma</td> </tr>
+       <tr> <td rowspan="2"  class="ce">1818</td> <td>A Abadia de Northanger</td> 
+       <tr> <td>Persuasão</td> </tr>   
+   </table>
+            </br>
+        </section>
+        
+        <aside id="lateral">
+            <img id="js1" class="circulo" src="_imagens/icone-01.jpg" onmousemove="muda_icone(1)" onmouseout="volta_icone(1)"/>
+            <img id="js2" class="circulo" src="_imagens/icone-02.jpg" onmousemove="muda_icone(2)" onmouseout="volta_icone(2)"/>
+        </aside>
+        
+        <footer id="rodape">
+            <p>Desenvolvido por Raquel Romão /2015</p>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
